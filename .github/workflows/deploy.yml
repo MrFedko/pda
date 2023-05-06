@@ -15,7 +15,5 @@ jobs:
       - run: mkdir "$HOME/.ssh"
       - run: echo "$" > "$HOME/.ssh/key"
       - run: chmod 600 "$HOME/.ssh/key"
-      # Build
-      - run: npm ci
       # Deploy
       - run: rsync -e "ssh -p 20022 -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . u2045517@37.140.192.199:/var/www/u2045517/data/www/mrfedko.ru
