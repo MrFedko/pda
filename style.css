@@ -389,7 +389,7 @@ img {
   filter: blur(150px);
 }
 
-.process {
+.points {
   height: 511px;
   width: 1354px;
   margin: 0 auto;
@@ -401,7 +401,7 @@ img {
   gap: 40px;
   margin-bottom: 460px; /* временно */
 }
-.process__text {
+.points__text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -409,7 +409,7 @@ img {
   justify-content: space-between;
   gap: 20px;
 }
-.process__text__h2 {
+.points__text__h2 {
   width: 968px;
   height: 138px;
   font-family: "Unbounded";
@@ -419,7 +419,7 @@ img {
   line-height: 46px;
   color: #FFFFFF;
 }
-.process__text__p {
+.points__text__p {
   width: 864px;
   height: 76px;
   font-family: "Manrope";
@@ -429,7 +429,7 @@ img {
   line-height: 38px;
   color: #7EAFD4;
 }
-.process__cards {
+.points__cards {
   width: 1287.71px;
   height: 257px;
   display: flex;
@@ -437,7 +437,7 @@ img {
   justify-content: center;
   gap: 70.25px;
 }
-.process__cards__card {
+.points__cards__card {
   width: 333.99px;
   height: 218.71px;
   mix-blend-mode: color-dodge;
@@ -449,7 +449,7 @@ img {
   margin-top: 20px;
   margin-bottom: 18.29px;
 }
-.process__cards__card__rectangle {
+.points__cards__card__rectangle {
   width: 73.71px;
   height: 71.71px;
   background: #0CA2FD;
@@ -459,13 +459,13 @@ img {
   align-items: center;
   z-index: 9;
 }
-.process__cards__card__rectangle__img {
+.points__cards__card__rectangle__img {
   z-index: 10;
   width: 34.76px;
   height: 27.81px;
   opacity: 1;
 }
-.process__cards__card__h3 {
+.points__cards__card__h3 {
   font-family: "Unbounded";
   font-style: normal;
   font-weight: 400;
@@ -473,7 +473,7 @@ img {
   line-height: 23px;
   color: #FFFFFF;
 }
-.process__cards__card__p {
+.points__cards__card__p {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
