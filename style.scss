@@ -975,7 +975,7 @@ html, body {
                 font-family: 'Unbounded';
                 font-size: 40px;
                 font-style: normal;
-                font-weight: 400;
+                font-weight: 300;
                 line-height: 115%; /* 46px */
             }
 
@@ -984,7 +984,7 @@ html, body {
                 font-family: 'Manrope';
                 font-size: 24px;
                 font-style: normal;
-                font-weight: 400;
+                font-weight: 300;
                 line-height: 140%; /* 33.6px */
             }
 
@@ -1565,6 +1565,9 @@ html, body {
         background-size: 132vw;
         &__title {
             flex-direction: column;
+            &__p {
+                width: 46%;
+            }
         }
 
         &__main{
@@ -1665,3 +1668,1074 @@ html, body {
     }
 }
 
+@media (max-width: 900px) {
+    :root {
+        --font__footer: 14px;
+        --navbar__font: 17px;
+        --welcome__h1: 45px;
+        --welcome__h3: 19px;
+        --our_serv__p: 10px;
+        --partners_h1: 35px;
+        --partners_p: 20px;
+        --wedo__h1: 30px;
+        --wedo_btns: 25px;
+        --points__cards_p: 13px;
+        --process__h2: 22px;
+        --process__h4: 14px;
+        --cases_rainbow: 38px;
+        --cases_card_h2: 16px;
+        --footer_p: 21px;
+    }
+    .navigation {
+        &__logo {
+            &__logo {
+                width: 102px;
+            }
+            &__elipse {
+                margin-top: 70px;
+            }
+            &__elipse2 {
+                margin-left: 10px;
+            }
+        }
+        &__navbar {
+            &__link {
+                font-size: var(--navbar__font);
+
+            }
+        }
+        &__button {
+            font-size: var(--navbar__font);
+            width: 160px;
+            height: 48px;
+        }
+    }
+
+    .welcome {
+        &__content {
+            &__h1 {
+                font-size: var(--welcome__h1);
+                width: 40%;
+            }
+
+            &__h3 {
+                font-size: var(--welcome__h3);
+            }
+
+            &__button_start {
+                font-size: var(--navbar__font);
+                width: 180px
+            }
+        }
+    }
+
+    .our_serv {
+        &__karusel {
+            &__inner {
+                gap: 20px;
+            }
+            &__child {
+                min-width: calc((96vw - 62px - 40px) / 3);
+                &__h2 {
+                    font-size: var(--welcome__h3);
+                }
+
+                &__p {
+                    width: 100%;
+                    font-size: var(--our_serv__p);
+                }
+            }
+        }
+    }
+
+    .partners {
+        &__h1 {
+            font-size: var(--partners_h1);
+            width: 70%;
+        }
+        &__p {
+            font-size: var(--partners_p);
+            width: 64%;
+        }
+        &__grid {
+            &__child {
+                display: flex;
+                justify-content: center;
+                &__img {
+                    width: 84%;
+                }
+            }
+        }
+    }
+
+    .wedo {
+        &__title {
+            &__h1 {
+                font-size: var(--wedo__h1);
+            }
+            &__p {
+                font-size: var(--welcome__h3);
+                width: 49%;
+            }
+        }
+        &__main {
+            &__buttons {
+                &__child {
+                    height: 90px;
+                    &__btn {
+                        font-size: var(--wedo_btns);
+                        height: 80px;
+                    }
+                }
+            }
+        }
+    }
+
+    .points {
+        &__text {
+            &__h2 {
+                font-size: var(--wedo__h1);
+                width: 80vw;
+            }
+            &__p {
+                width: 87vw;
+                font-size: var(--partners_p);
+            }
+        }
+        &__cards {
+            &__card {
+                &__rectangle {
+                    width: 70px;
+                    height: 70px;
+                    &__img {
+                        height: 90%;
+                    }
+                }
+
+                &__h3 {
+                    font-size: var(--navbar__font);
+                }
+
+                &__p {
+                    font-size: var(--points__cards_p);
+                }
+            }
+        }
+    }
+
+    .process {
+        &__cards {
+            &__card {
+                &__h2 {
+                    font-size: var(--process__h2);
+                }
+                &__h4 {
+                    font-size: var(--process__h4);
+                }
+            }
+            gap: 0px;
+            height: 730px;
+
+            & .card1 {
+                padding-top: 0px;
+            }
+            & .card2 {
+                padding-top: 0px;
+
+            }
+    
+            & .card3 {
+                padding-top: 0px;
+                padding-left: 20vw;
+            }
+    
+            & .card4 {
+                padding-top: 10px;
+                padding-left: 540px;
+            }
+        }
+    }
+
+    .cases {
+        &__cont {
+            &__h1 {
+                font-size: var(--partners_h1);
+            }
+            &__h1_rainbow {
+                font-size: var(--cases_rainbow);
+            }
+            &__cards {
+                &__card {
+                    &__h2 {
+                        font-size: var(--cases_card_h2);
+                    }
+                    &__p {
+                        font-size: var(--points__cards_p);
+                    }
+                    &__hidden {
+                        font-size: var(--points__cards_p);
+                        width: calc((100vw - 60px) / 3);
+                        top: -71.5%;
+                        &__text {
+                            width: 95%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        &__cont {
+            &__top {
+                &__h1 {
+                    font-size: var(--partners_h1);
+                }
+                &__p {
+                    font-size: var(--footer_p);
+                }
+                &__button {
+                    font-size: var(--navbar__font);
+                    width: 160px;
+                    height: 48px;
+                }
+            }
+            &__footer {
+                &__left {
+                    width: 30%;
+                    p {
+                        font-size: var(--font__footer);
+                    }
+                }
+                &__middle {
+                    width: 30%;
+                    font-size: var(--font__footer);
+                }
+                &__right {
+                    width: 30%;
+                    height: 78px;
+                    p {
+                        width: 60%;
+                        font-size: var(--font__footer);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    :root {
+        --navbar__font: 15px;
+        --welcome__h1: 40px;
+        --welcome__h3: 17px;
+        --our_serv__h1: 22px;
+        --our_serv__h3: 15px;
+        --our_serv__p: 10px;
+        --partners_h1: 30px;
+        --partners_p: 18px;
+        --wedo__h1: 27px;
+        --wedo_btns: 20px;
+        --points__cards_p: 13px;
+        --process__h2: 20px;
+        --process__h4: 12px;
+        --cases_rainbow: 32px;
+        --cases_card_h2: 14px;
+        --footer_p: 18px;
+        --font__footer: 12px;
+    }
+    .navigation {
+        gap: 15px;
+        &__logo {
+            height: 100%;
+            width: 15%;
+            &__logo {
+                width: 100%;
+                height: 75%;
+            }
+            &__elipse {
+                width: 80px;
+                height: 80px;
+            }
+        }
+        &__button{
+            margin-left: 0;
+        }
+    }
+    .welcome {
+        height: 835px;
+        &__content {
+            width: 82%;
+            &__button {
+                width: 90%;
+                font-size: var(--welcome__h3);
+                &_start {
+                    width: 166px;
+                    height: 50px;
+                    align-items: center;
+                    z-index: 10;
+                    position: relative;
+                }
+            }
+            
+        }
+        &__image {
+            right: 62%;
+        }
+    }
+
+    .our_serv {
+        gap: 10px;
+        &__title {
+            &__h1 {
+                font-size: var(--our_serv__h1);
+            }
+            &__h3 {
+                font-size: var(--our_serv__h3);
+            }
+        }
+        &__karusel {
+            &__child {
+                gap: 10px;
+                &__rect {
+                    margin-bottom: 0px;
+                    width: 50px;
+                    height: 50px;
+                    &__img {
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+                &__h2 {
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-bottom: 0;
+                }
+                &__p {
+                    font-size: 9px;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .partners {
+        margin-top: 30px;
+        height: 58%;
+    }
+
+    .wedo {
+        &__main {
+            &__buttons {
+                max-width: 43%;
+                &__child {
+                    &__btn {
+                        padding: 20px 10px 20px 20px;
+                        gap: 15px;
+                    }
+                    &__hidden {
+                        padding: 15px 15px 15px 15px;
+                        &__text {
+                            font-size: 13px;
+                        }
+
+                    }
+                }
+            }
+            &__img {
+                top: -15%;
+                &__main {
+                    left: -10%;
+                }
+                &__elipse {
+                    width: 100%;
+                    height: 100%;
+                    top: 75px;
+                }
+            }
+        }
+    }
+    .points {
+        z-index: 6;
+        &__cards {
+            &__card {
+                padding: 5px 10px 0px 10px;
+            }
+        }
+    }
+
+    .process {
+        &__cards {
+            height: 600px;
+            justify-content: space-between;
+            position: relative;
+            top: -10px;
+
+            .card4 {
+                padding-top: 0px;
+                padding-left: 450px;
+            }
+        }
+    }
+
+    .cases {
+        &__cont {
+            &__cards {
+                height: max-content;
+                &__card{
+                    height: 400px;
+                    &__h2{
+                        width: max-content;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        &__cont {
+            &__top {
+                margin-bottom: 40px;
+            }
+            &__footer {
+                &__left {
+                    height: 150px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    :root {
+        --navbar__font: 12px;
+        --welcome__h1: 35px;
+        --welcome__h3: 15px;
+        --our_serv__h1: 20px;
+        --our_serv__h3: 13px;
+        --our_serv__p: 10px;
+        --partners_h1: 26px;
+        --partners_p: 14px;
+        --wedo__h1: 27px;
+        --wedo_btns: 15px;
+        --points__cards_p: 10px;
+        --process__h2: 18px;
+        --process__h4: 10px;
+        --cases_rainbow: 28px;
+        --cases_card_h2: 12px;
+        --font__footer: 10px;
+        --footer_p: 14px;
+    }
+
+    .navigation {
+        height: 150px;
+        &__navbar {
+            align-items: flex-end;
+        }
+        &__button {
+            width: 130px;
+            height: 38px;
+        }
+    }
+
+    .welcome {
+        height: 700px;
+        &__content {
+            &__button {
+                height: 43px;
+                &_start {
+                    width: 145px;
+                    height: 38px; 
+                }
+            }
+        }
+        &__image {
+            right: 55%;
+            width: max-content;
+            height: max-content;
+            &__image {
+                width: 500px;
+                height: 480px;
+            }
+            &__elipse3 {
+                right: 0;
+            }
+        }
+    }
+
+    .our_serv {
+        height: max-content;
+        margin-bottom: 60px;
+        &__title {
+            margin-bottom: 15px;
+        }
+        &__karusel {
+            &__inner {
+                padding: 13px 0px 0px 0px;
+            }
+            &__child {
+                padding: 8px;
+                &__rect {
+                    width: 40px;
+                    height: 40px;
+                    &__img {
+                        width: 28px;
+                        height: 28px;
+                    }
+                }
+                &__h2 {
+                    height: max-content;
+                    margin-bottom: 7%;
+                }
+                &__p {
+                    font-size: 7.5px;
+                }
+            }
+        }
+    }
+
+    .partners {
+        &__grid {
+            height: 350px;
+        }
+    }
+
+    .wedo {
+        &__main {
+            &__buttons {
+                &__child {
+                    &__btn {
+                        &__rect {
+                            width: 37px;
+                            height: 37px;
+                            img {
+                                width: 70%;
+                            }
+                        }
+                        height: 60px;
+                        &__arrow {
+                            position: relative;
+                            width: var(--wedo_btns);
+                        }
+                    }
+                    &__hidden__text {
+                        font-size: var(--navbar__font);
+                    }
+                }
+            }
+        }
+    }
+    .paint {
+        width: 100% !important;
+    }
+
+    .points {
+        &__text {
+            &__h2 {
+                line-height: 30px;
+                height: max-content;
+            }
+            &__p {
+                line-height: 27px;
+            }
+        }
+        &__cards {
+            &__card {
+                &__rectangle {
+                    width: 55px;
+                    height: 55px;
+                }
+            }
+        }
+    }
+
+    .process {
+        margin-top: 10px;
+        &__font {
+            height: 700px;
+            &__images {
+                &__vector {
+                    min-height: 500px;
+                    padding-top: 100px;
+                }
+            }
+        }
+        &__cards {
+            height: 500px;
+            top: -30px;
+            .card3 {
+                padding-top: 15px;
+            }
+            .card4 {
+                padding-left: 350px;
+                padding-top: 30px;
+            }
+        }
+    }
+
+    .cases {
+        &__cont {
+            &__cards {
+                &__card {
+                    height: 334px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        &__cont {
+            &__top {
+                height: 160px;
+                &__button {
+                    width: 130px;
+                    height: 38px;
+                }
+            }
+            &__footer {
+                height: 150px;
+                &__left {
+                    height: 129px;
+                }
+                &__right {
+                    height: 56px;
+                    &__social {
+                        &__link {
+                            img {
+                                height: 75%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        --navbar__font: 10px;
+        --welcome__h1: 30px;
+        --welcome__h3: 12px;
+        --our_serv__h1: 18px;
+        --our_serv__h3: 11px;
+        --our_serv__p: 8px;
+        --partners_h1: 22px;
+        --partners_p: 12px;
+        --wedo__h1: 22px;
+        --wedo_btns: 12px;
+        --points__cards_p: 8px;
+        --process__h2: 14px;
+        --process__h4: 8px;
+        --cases_rainbow: 24px;
+        --cases_card_h2: 10px;
+        --font__footer: 8px;
+        --footer_p: 12px;
+    }
+
+    .navigation {
+        height: 120px;
+        &__button {
+            width: 110px;
+            height: 32px;
+        }
+    }
+    .welcome {
+        height: 500px;
+        &__content {
+            gap: 22px;
+            height: max-content;
+            &__button {
+                &_start {
+                    width: 132px;
+                    height: 32px;
+                }
+            }
+        }
+        &__image {
+            top: 200px;
+            &__image {
+                width: 420px;
+                height: 400px;
+            }
+        }
+    }
+
+    .our_serv {
+        &__karusel {
+            &__inner {
+                gap: 10px;
+            }
+            &__child {
+                min-width: calc((96vw - 62px - 20px) / 3);
+                &__rect {
+                    width: 33px;
+                    height: 33px;
+                    border-radius: 6px;
+                    &__img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+                &__h2 {
+                    height: max-content;
+                    margin-bottom: 7%;
+                }
+                &__p {
+                    font-size: 6.5px;
+                }
+            }
+        }
+    }
+
+    .partners {
+        &__grid {
+            height: 300px;
+        }
+    }
+
+    .wedo {
+        &__title {
+            gap: 10px;
+            &__h1 {
+                height: max-content;
+            }
+        }
+        &__main {
+            &__buttons {
+                max-width: 40%;
+                &__child {
+                    height: 60px;
+                    &__btn {
+                        height: 50px;
+                        border-radius: 15px;
+                        &__rect {
+                            width: 30px;
+                            height: 30px;
+                            img {
+                                width: 70%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .points {
+        gap: 0;
+        &__text {
+            &__p {
+                line-height: 20px;
+            }
+        }
+        &__cards {
+            &__card {
+                &__rectangle {
+                    width: 44px;
+                    height: 44px;
+                    img {
+                        height: 150%;
+                    }
+                }
+            }
+        }
+    }
+
+    .process {
+        &__font {
+            height: 650px;
+            &__images {
+                &__vector {
+                    padding-top: 70px;
+                }
+            }
+        }
+        &__cards {
+            height: 450px;
+            .card3 {
+                padding-top: 30px;
+            }
+        }
+    }
+    .cases {
+        height: 110vw;
+        &__cont {
+            &__cards {
+                &__card {
+                    height: 300px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        &__cont {
+            &__top {
+                height: 130px;
+                &__button {
+                    width: 110px;
+                    height: 32px;
+                }
+            }
+            &__footer {
+                height: 130px;
+                &__left {
+                    height: 90%;
+                }
+                &__right {
+                    height: 45px;
+                    &__social {
+                        width: 70%;
+                        img {
+                            height: 60%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    :root {
+        --navbar__font: 7px;
+        --welcome__h1: 30px;
+        --welcome__h3: 10px;
+        --our_serv__h1: 16px;
+        --our_serv__h3: 10px;
+        --our_serv__p: 8px;
+        --partners_h1: 16px;
+        --partners_p: 10px;
+        --wedo__h1: 16px;
+        --wedo_btns: 10px;
+        --points__cards_p: 5px;
+        --process__h2: 10px;
+        --process__h4: 6.5px;
+        --cases_rainbow: 18px;
+        --cases_card_h2: 8px;
+        --font__footer: 5px;
+        --footer_p: 12px;
+    }
+
+    .navigation {
+        height: 77px;
+        &__navbar {
+            height: 29px;
+        }
+        &__button {
+            width: 76px;
+            height: 22px;
+
+        }
+    }
+    .welcome {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        &__content {
+            &__button {
+                font-size: 9px;
+                height: 29px;
+                &_start {
+                    display: flex;
+                    width: 76.3px;
+                    height: 21.424px;
+                    padding: 5.638px 11.276px;
+                    align-items: flex-start;
+                    gap: 3.759px;
+                    flex-shrink: 0;           
+                }
+            }
+            gap: 19px;
+        }
+        &__image {
+            right: 62%;
+            &__image {
+                width: 355.383px;
+                height: 341.564px;
+            }
+        }
+    }
+
+    .our_serv {
+        margin-bottom: 16px;
+        &__title {
+            margin-top: 20px;
+            height: 94px;
+            margin-bottom: 0;
+        }
+        &__karusel {
+            gap: 5px;
+            align-items: center;
+            padding: 0;
+            &__child {
+                min-height: 120px;
+                min-width: calc((96vw - 48px) / 3);
+                border-radius: 6px;
+                &__h2{
+                }
+                &__p {
+                    font-size: 4.5px;
+                }
+            }
+            &__arrow_left, &__arrow_right {
+                height: 15px;
+            }
+        }
+    }
+
+    .partners {
+        &__grid {
+            margin-top: 0;
+        }
+    }
+
+    .wedo {
+        margin-top: 24px;
+        &__main {
+            &__buttons {
+                height: 70vw;
+                gap: 10px;
+                &__child {
+                    height: 36px;
+                    &__btn {
+                        border-radius: 8px;
+                        height: 36px;
+                        padding: 6px 4px 4px 6px;
+                        line-height: 0;
+                        &__rect {
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 3px;
+                        }
+                    }
+                    &__hidden {
+                        border-radius: 8px;
+                        padding: 5px;
+                    }
+                }
+            }
+            &__img {
+                &__main {
+                    top: 30px;
+                }
+            }
+        }
+    }
+    .points {
+        height: max-content;
+        margin-bottom: 24px;
+        &__text {
+            gap: 10px;
+            &__h2 {
+                line-height: 20px;
+            }
+            &__p {
+                line-height: 20px;
+            }
+        }
+        &__cards {
+            padding-top: 0;
+            height: 120px;
+            &__card {
+                gap: 10px;
+                &__rectangle {
+                    width: 33px;
+                    height: 33px;
+                    border-radius: 8px;
+                    padding: 4px;
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .process {
+        height: 300px;
+        margin-bottom: 30px;
+        &__font {
+            height: 300px;
+            &__images {
+                top: 30px;
+                &__vector {
+                    padding-top: 0;
+                    min-height: 250px;
+                }
+                &__right {
+                    left: 100px;
+                    top: 100px;
+                    width: 300px;
+                    height: 100px;
+                }
+            }
+        }
+        &__cards {
+            top: 41px;
+            height: 370px;
+            &__card {
+
+            }
+            .card3 {
+                padding-top: 2px;
+            }
+            .card4 {
+                padding-left: 250px;
+                padding-top: 20px;
+            }
+        }
+    }
+
+    .cases {
+        height: 105vw;
+        &__cont {
+            gap: 10px;
+            &__h1 {
+                height: max-content;
+            }
+            &__cards {
+                margin-top: 10px;
+                &__card {
+                    height: 240px;
+                    padding: 10px 7px;
+                    &__hidden {
+                        &__text {
+                            line-height: 9px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        height: 210px;
+        &__cont {
+            gap: 10px;
+            &__top {
+                height: 105px;
+                margin-bottom: 0;
+                &__button {
+                    width: 76px;
+                    height: 22px;
+                }
+            }
+            &__footer {
+                height: 85px;
+                margin-bottom: 0px;
+                &__right {
+                    height: 28px;
+                    &__social {
+                        justify-content: space-between;
+                        &__link {
+                            img {
+                                height: 40%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -137,7 +137,7 @@
                             <img src="./img/wedo_1.svg" alt="">
                         </div>
                         Аудит
-                        <img src="./img/arrow.svg" alt="">
+                        <img class="wedo__main__buttons__child__btn__arrow" src="./img/arrow.svg" alt="">
                     </button>
                     <div class="wedo__main__buttons__child__hidden">
                         <p class="wedo__main__buttons__child__hidden__text">Оценка качества РК и настроек веб-аналитки <br>
@@ -153,7 +153,7 @@
                             <img src="./img/wedo_2.svg" alt="">
                         </div>
                         Планирование
-                        <img src="./img/arrow.svg" alt="">
+                        <img class="wedo__main__buttons__child__btn__arrow" src="./img/arrow.svg" alt="">
                     </button>
                     <div class="wedo__main__buttons__child__hidden">
                         <p class="wedo__main__buttons__child__hidden__text">Разработка медиапланов<br>Подготовка КП / презентаций
@@ -163,10 +163,10 @@
                 <div class="wedo__main__buttons__child">
                     <button class="wedo__main__buttons__child__btn" type="button">
                         <div class="wedo__main__buttons__child__btn__rect">
-                            <img src="./img/wedo_3.svg" alt="">
+                            <img class="paint" src="./img/wedo_3.svg" alt="">
                         </div>
                         Дизайн
-                        <img src="./img/arrow.svg" alt="">
+                        <img class="wedo__main__buttons__child__btn__arrow" src="./img/arrow.svg" alt="">
                     </button>
                     <div class="wedo__main__buttons__child__hidden">
                         <p class="wedo__main__buttons__child__hidden__text">Разработка собственного стиля <br>
@@ -180,7 +180,7 @@
                             <img src="./img/wedo_4.svg" alt="">
                         </div>
                         Аккаунтинг
-                        <img src="./img/arrow.svg" alt="">
+                        <img class="wedo__main__buttons__child__btn__arrow" src="./img/arrow.svg" alt="">
                     </button>
                     <div class="wedo__main__buttons__child__hidden">
                         <p class="wedo__main__buttons__child__hidden__text">Взаимодействие с клиентом на всех <br>стадиях проекта<br>
@@ -193,7 +193,7 @@
                             <img src="./img/wedo_5.svg" alt="">
                         </div>
                         Баинг
-                        <img src="./img/arrow.svg" alt="">
+                        <img class="wedo__main__buttons__child__btn__arrow" src="./img/arrow.svg" alt="">
                     </button>
                     <div class="wedo__main__buttons__child__hidden">
                         <p class="wedo__main__buttons__child__hidden__text">Ведение кампаний клиентов<br>Контроль выполнения KPI<br>Взаимодействие с подрядчиками</p>
@@ -447,6 +447,51 @@
                 }
              });
          });
+    </script>
+    <script>
+        (function() {
+            const ARROWS = {
+                LEFT: document.querySelector('.our_serv__karusel__arrow_left'),
+                RIGHT: document.querySelector('.our_serv__karusel__arrow_right'),
+            }
+         
+            function getVisibleArrows(currentScroll, contentWidth, containerWidth) {
+                if (contentWidth - currentScroll === 0) {
+                    return ['RIGHT'];
+                }
+         
+                if (currentScroll === containerWidth) {
+                    return ['LEFT'];
+                }
+         
+                return ['LEFT', 'RIGHT'];
+            }
+         
+            function renderArrows(visibleArrows) {
+                Object.keys(ARROWS).forEach(arrow => {
+                    console.log(arrow);
+                    if (visibleArrows.includes(arrow)) {
+                        ARROWS[arrow].style.visibility = 'visible';
+                    } else {
+                        ARROWS[arrow].style.visibility = 'hidden';
+                    }
+                });
+            }
+         
+            const carouselContent = document.querySelector('.our_serv__karusel__inner');
+            carouselContent.addEventListener('scroll', function(e) {
+                const containerWidth = e.target.offsetWidth;
+                const contentWidth = e.target.scrollWidth;
+                const scrollPosition = e.target.scrollLeft;
+         
+                const currentScroll = contentWidth - Math.round(scrollPosition);
+         
+                const visibleArrows = getVisibleArrows(currentScroll, contentWidth, containerWidth);
+                renderArrows(visibleArrows);
+            });
+         
+            renderArrows(['RIGHT']);
+        })();
     </script>
 </body>
 </html>
