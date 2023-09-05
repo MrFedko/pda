@@ -1,0 +1,40 @@
+
+.wedo {
+    &__main {
+        &__img {
+            &__elipse {
+                filter: blur(100px);
+            }
+        }
+    }
+}
+
+/*–––process––––*/
+
+.process {
+    &__font {
+        &__images {
+            &__lefttop {
+                filter: blur(99px);
+            }
+
+            &__right {
+                filter: blur(99px);
+            }
+        }
+    }
+}
+
+/*–––cta––––*/
+
+.cta__middle {
+
+    &__left {
+        &__img {
+            filter: blur(150px);
+        }
+        &__elipse {
+            filter: blur(120px);
+        }
+    }
+}

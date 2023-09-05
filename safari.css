@@ -1,0 +1,20 @@
+@charset "UTF-8";
+.wedo__main__img__elipse {
+  filter: blur(100px);
+}
+
+/*–––process––––*/
+.process__font__images__lefttop {
+  filter: blur(99px);
+}
+.process__font__images__right {
+  filter: blur(99px);
+}
+
+/*–––cta––––*/
+.cta__middle__left__img {
+  filter: blur(150px);
+}
+.cta__middle__left__elipse {
+  filter: blur(120px);
+}/*# sourceMappingURL=safari.css.map */

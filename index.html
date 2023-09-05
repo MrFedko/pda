@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDA</title>
     <link rel="stylesheet" href="style.css">
+    <script>function get_name_browser(){    
+        var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+        if (isSafari) return true;
+        return false;
+        }
+        if (get_name_browser()) {
+        document.write('<link rel="stylesheet" href="safari.css">');
+        }
+    </script>
 </head>
 <body>
     <header class="navigation">
@@ -118,7 +127,7 @@
             <div class="partners__grid__child">
                 <img class="partners__grid__child__img" src="./img/logo/TS 1.svg" alt="shark">
             </div>
-            <div class="partners__grid__child">
+            <div class="partners__grid__child clever">
                 <img class="partners__grid__child__img" src="./img/logo/Clever_logo.svg" alt="clever">
             </div>
         </div>
@@ -209,7 +218,7 @@
     <section class="points">
         <div class="points__text">
             <h2 class="points__text__h2">PDA имеет уникальную структуру – наши сотрудники работают из разных точек мира</h2>
-            <p class="points__text__p">Для достижения задач клиентов мы привлекаем специалистов с наиболее релевантным опытом и высокой экспертизой рынка</p>
+            <p class="points__text__p">Для достижения задач клиентов мы привлекаем специалистов <br>с наиболее релевантным опытом и высокой экспертизой рынка</p>
         </div>
         <div class="points__cards">
             <div class="points__cards__card">
@@ -404,6 +413,11 @@
               }
             hiddenBlocks[index].style.display = "flex";
           });
+          button.addEventListener('mouseleave', function() {
+            for (var i = 0; i < hiddenBlocks.length; i++) {
+                hiddenBlocks[i].style.display = "none";
+            }
+        });
         });
     </script>
     <script>
@@ -420,33 +434,12 @@
                 }
                 hi[index].style.display = "flex";
             });
-        });
-    </script>
-    <script>
-        window.addEventListener('scroll', function() {
-            var blocks1 = document.querySelectorAll('.cases__cont__cards__card__hidden'); // здесь .block - класс блоков, которые нужно скрыть
-            var blocks2 = document.querySelectorAll('.wedo__main__buttons__child__hidden');
-            blocks1.forEach(function(block) {
-               var blockPosition = block.getBoundingClientRect().top;
-               var windowHeight = window.innerHeight;
-               
-               if (blockPosition < windowHeight) {
-                  block.style.display = 'none';
-               } else {
-                  block.style.display = 'flex';
-               }
-            });
-            blocks2.forEach(function(block) {
-                var blockPosition = block.getBoundingClientRect().top;
-                var windowHeight = window.innerHeight;
-                
-                if (blockPosition < windowHeight) {
-                   block.style.display = 'none';
-                } else {
-                   block.style.display = 'flex';
+            bu.addEventListener('mouseleave', function() {
+                for (var i = 0; i < hi.length; i++) {
+                    hi[i].style.display = "none";
                 }
-             });
-         });
+            });
+        });
     </script>
     <script>
         (function() {
@@ -493,5 +486,27 @@
             renderArrows(['RIGHT']);
         })();
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousel = document.querySelector('.our_serv__karusel__inner');
+            const arrowLeft = document.querySelector('.our_serv__karusel__arrow_left');
+            const arrowRight = document.querySelector('.our_serv__karusel__arrow_right');
+            
+            arrowLeft.addEventListener('click', function() {
+              carousel.scrollBy({
+                left: -carousel.offsetWidth,
+                behavior: 'smooth'
+              });
+            });
+            
+            arrowRight.addEventListener('click', function() {
+              carousel.scrollBy({
+                left: carousel.offsetWidth,
+                behavior: 'smooth'
+              });
+            });
+          });
+    </script>
+    
 </body>
 </html>

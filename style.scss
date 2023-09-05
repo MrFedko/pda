@@ -131,7 +131,7 @@ html, body {
         left: -5px;
 
         &__button {
-            width: 526px;
+            width: 527px;
             height: 57px;
             display: inline-flex;
             padding: 15px 29px 15px 30px;
@@ -417,7 +417,7 @@ html, body {
         justify-items: center;
 
         &__child__img {
-            filter: grayscale(1);
+
         }
     }
 }
@@ -439,7 +439,7 @@ html, body {
     &__big {
         position: absolute;
         z-index: 0;
-        top: 60px;
+        top: 75px;
         left: 0;
         height: 85%;
         width: 150%;
@@ -520,6 +520,7 @@ html, body {
                     letter-spacing: 0px;
                     text-align: left;
                     color: var(--pda-white, #FFF);
+                    z-index: 10;
 
                     &__rect {
                         width: 41.998px;
@@ -538,11 +539,11 @@ html, body {
                     min-width: max-content;
                     height: max-content;
                     display: none;
-                    padding: 20px 20px 30px 20px;
+                    padding: 20px 20px 20px 20px;
                     align-items: flex-start;
                     gap: 10px;
                     border-radius: 25px;
-                    background: var(--pda-caption, rgba(18, 13, 53, 0.50));
+                    background: var(--pda-caption, #0f0b29ca);
                     z-index: 10;
 
                     &__text {
@@ -890,7 +891,7 @@ html, body {
                     font-family: 'Unbounded';
                     font-size: 24px;
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: 300;
                     line-height: 125%; /* 30px */
                 }
 
@@ -899,7 +900,7 @@ html, body {
                     font-family: 'Manrope';
                     font-size: 20px;
                     font-style: normal;
-                    font-weight: 500;
+                    font-weight: 200;
                     line-height: 140%;
                 }
                 &__img {
@@ -927,7 +928,7 @@ html, body {
                     font-family: 'Manrope';
                     font-size: 20px;
                     font-style: normal;
-                    font-weight: 500;
+                    font-weight: 200;
                     line-height: 140%;
                     padding-left: 5px;
 
@@ -950,17 +951,17 @@ html, body {
 
 .footer {
     width: 1440px;
-    height: 394px;
+    height: 100%;
+    margin-bottom: 30px;
     margin: 0 auto;
     margin-top: 60px;
-   
-
+    position: relative;
+    z-index: 1;
     &__cont {
         width: 1141px;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-
         &__top {
             margin-bottom: 83px;
             width: 456px;
@@ -1009,7 +1010,7 @@ html, body {
             display: inline-flex;
             justify-content: space-between;
             align-items: flex-end;
-            margin-bottom: 81px;
+            margin-bottom: 30px;
             height: 177px;
 
             &__left {
@@ -1055,6 +1056,7 @@ html, body {
                     font-weight: 200;
                     line-height: 140%; /* 28px */
                     margin-bottom: 15px;
+                    text-align: center;
                 }
 
                 &__social {
@@ -1078,7 +1080,16 @@ html, body {
     padding: 0px 1017.365px 0px 0px;
     align-items: center;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 23px;
+    &__img {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 121px;
+        height: 202px;
+        position: relative;
+
+    }
 }
 
 .cta__middle {
@@ -1109,6 +1120,7 @@ html, body {
             font-style: normal;
             font-weight: 400;
             line-height: 125%; /* 50px */
+            z-index: 3;
         }
 
         &__p {
@@ -1118,6 +1130,34 @@ html, body {
             font-style: normal;
             font-weight: 400;
             line-height: 140%; /* 33.6px */
+            z-index: 3;
+        }
+        &__img {
+            position: relative;
+            z-index: 1;
+            border-radius: 309px;
+            background: #FF5E18;
+            background-blend-mode: color-dodge;
+            mix-blend-mode: lighten;
+            filter: blur(179px);
+            width: 309px;
+            height: 198px;  
+            top: 150px;
+            left: 50px;
+
+        }
+        &__elipse {
+            position: relative;
+            z-index: 0;
+            border-radius: 742.279px;
+            background: rgba(0, 56, 255, 0.80);
+            background-blend-mode: color-dodge;
+            mix-blend-mode: lighten;
+            filter: blur(200px);
+            width: 742.279px;
+            height: 498.711px;
+            top: -100px;
+            left: -300px;
         }
     }
 
@@ -1128,12 +1168,15 @@ html, body {
         display: flex;
         flex-direction: column;
         gap: 30px;
+        z-index: 4;
+        align-items: flex-end;
 
         &__box {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             gap: 23px;
+            width: 100%;
 
             & label {
                 color: var(--pda-white, #FFF);
@@ -1194,7 +1237,6 @@ html, body {
             font-weight: 600;
             line-height: normal;
             position: relative;
-            left: 310px;
         }
     }
 }
@@ -1360,6 +1402,24 @@ html, body {
     .footer__cont{
         width: var(--width);
     }
+
+    .cta__top {
+        padding: 0px 0px 0px 15px;
+        width: 90vw;
+        
+    }
+
+    .cta__middle {
+        width: 90vw;
+        &__left {
+            &__h1 {
+                font-size: var(--h1-35px);
+            }
+            &__p {
+                font-size: var(--p-20px);
+            }
+        }
+    }
 }
 
 @media (max-width: 1080px) {
@@ -1508,7 +1568,7 @@ html, body {
 
             &__h1 {
                 padding-left: 2%;
-                font-size: 25px;
+                font-size: var(--partners_h1);
                 margin-top: 0;
             }
             &__h3 {
@@ -1663,6 +1723,18 @@ html, body {
                         top: -69.5%;
                     }
                 }
+            }
+        }
+    }
+
+    .cta__middle {
+        &__left {
+            width: 50%;
+            &__h1 {
+                font-size: 32px;
+            }
+            &__p {
+                font-size: 18px;
             }
         }
     }
@@ -1857,6 +1929,10 @@ html, body {
     }
 
     .cases {
+        height: 99vw;
+        &__big {
+            height: 90%;
+        }
         &__cont {
             &__h1 {
                 font-size: var(--partners_h1);
@@ -1886,6 +1962,7 @@ html, body {
     }
 
     .footer {
+        margin-top: 80px;
         &__cont {
             &__top {
                 &__h1 {
@@ -1908,19 +1985,48 @@ html, body {
                     }
                 }
                 &__middle {
-                    width: 30%;
+                    width: 25%;
                     font-size: var(--font__footer);
                 }
                 &__right {
-                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
                     height: 78px;
+                    justify-content: center;
+                    align-items: center;
                     p {
-                        width: 60%;
                         font-size: var(--font__footer);
+                    }
+                    &__social {
+                        width: 65%;
                     }
                 }
             }
         }
+    }
+    
+    .cta__top {
+        padding-left: 32px;
+        height: 180px;
+    }
+    .cta__middle {
+        flex-direction: column;
+        width: 90vw;
+        height: 100%;
+        gap: 20px;
+        &__left {
+            padding-top: 40px;
+            padding-left: 32px;
+            width: 100%;
+        }
+        &__right {
+            width: 100%;
+        }
+    }
+
+    .footer_cta {
+        height: 100%;
+        padding-left: 2vw;
     }
 }
 
@@ -1967,7 +2073,8 @@ html, body {
         &__content {
             width: 82%;
             &__button {
-                width: 90%;
+                width: 82%;
+                padding: 15px 20px 15px 20px;
                 font-size: var(--welcome__h3);
                 &_start {
                     width: 166px;
@@ -1988,7 +2095,7 @@ html, body {
         gap: 10px;
         &__title {
             &__h1 {
-                font-size: var(--our_serv__h1);
+                font-size: var(--partners_h1);
             }
             &__h3 {
                 font-size: var(--our_serv__h3);
@@ -2032,13 +2139,14 @@ html, body {
                     &__btn {
                         padding: 20px 10px 20px 20px;
                         gap: 15px;
+                        z-index: 10;
                     }
                     &__hidden {
                         padding: 15px 15px 15px 15px;
                         &__text {
                             font-size: 13px;
                         }
-
+                        z-index: 11;
                     }
                 }
             }
@@ -2056,6 +2164,12 @@ html, body {
         }
     }
     .points {
+        &__text {
+            &__h2 {
+                line-height: 39px;
+                height: 120px;
+            }
+        }
         z-index: 6;
         &__cards {
             &__card {
@@ -2093,6 +2207,7 @@ html, body {
     }
 
     .footer {
+
         &__cont {
             &__top {
                 margin-bottom: 40px;
@@ -2100,6 +2215,19 @@ html, body {
             &__footer {
                 &__left {
                     height: 150px;
+                }
+                &__right {
+                    width: 25%;
+                    &__social {
+                        &__link {
+                            img {
+                                height: 60%;
+                            }
+                        }
+                    }
+                    p {
+                        margin-bottom: 10px;
+                    }
                 }
             }
         }
@@ -2110,7 +2238,7 @@ html, body {
     :root {
         --navbar__font: 12px;
         --welcome__h1: 35px;
-        --welcome__h3: 15px;
+        --welcome__h3: 14px;
         --our_serv__h1: 20px;
         --our_serv__h3: 13px;
         --our_serv__p: 10px;
@@ -2125,6 +2253,7 @@ html, body {
         --cases_card_h2: 12px;
         --font__footer: 10px;
         --footer_p: 14px;
+        --width:90vw;
     }
 
     .navigation {
@@ -2141,6 +2270,8 @@ html, body {
     .welcome {
         height: 700px;
         &__content {
+            position: relative;
+            z-index: 9;
             &__button {
                 height: 43px;
                 &_start {
@@ -2201,6 +2332,7 @@ html, body {
     }
 
     .wedo {
+        width: var(--width);
         &__main {
             &__buttons {
                 &__child {
@@ -2299,14 +2431,38 @@ html, body {
                 }
                 &__right {
                     height: 56px;
-                    &__social {
-                        &__link {
-                            img {
-                                height: 75%;
-                            }
-                        }
-                    }
+                    width: 23%;
                 }
+            }
+        }
+    }
+    .cta__middle {
+        &__left {
+            &__h1 {
+                font-size: var(--wedo__h1);
+            }
+            &__p {
+                font-size: var(--partners_p);
+            }
+        }
+
+        &__right {
+            &__box {
+                label {
+                    font-size: var(--process__h2);
+                }
+                &__area {
+                    border-radius: 15px;
+                }
+                &__message {
+                    border-radius: 15px;
+                }
+            }
+            &__submit {
+                font-size: var(--navbar__font);
+                width: 130px;
+                height: 38px;
+
             }
         }
     }
@@ -2346,6 +2502,7 @@ html, body {
             gap: 22px;
             height: max-content;
             &__button {
+                padding: 15px 15px 15px 15px;
                 &_start {
                     width: 132px;
                     height: 32px;
@@ -2368,6 +2525,7 @@ html, body {
             }
             &__child {
                 min-width: calc((96vw - 62px - 20px) / 3);
+                border-radius: 10px;
                 &__rect {
                     width: 33px;
                     height: 33px;
@@ -2402,6 +2560,13 @@ html, body {
             }
         }
         &__main {
+            &__img {
+                &__elipse {
+                    width: 70%;
+                    height: 70%;
+                    top: 100px;
+                }
+            }
             &__buttons {
                 max-width: 40%;
                 &__child {
@@ -2463,7 +2628,11 @@ html, body {
         &__cont {
             &__cards {
                 &__card {
+                    border-radius: 6px;
                     height: 300px;
+                    &__hidden {
+                        border-radius: 6px;
+                    }
                 }
             }
         }
@@ -2488,9 +2657,34 @@ html, body {
                     &__social {
                         width: 70%;
                         img {
-                            height: 60%;
+                            height: 50%;
                         }
                     }
+                    p {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .cta {
+        &__top {
+            &__img {
+                height: 70%;
+                width: 70%;
+            }
+        }
+        &__middle {
+            gap: 0px;
+            margin-top: 30px;
+            &__right {
+                height: 100%;
+                &__submit {
+                    width: 110px;
+                    height: 32px;
+                }
+                &__box {
+                    gap: 5px;
                 }
             }
         }
@@ -2513,13 +2707,13 @@ html, body {
         --process__h2: 10px;
         --process__h4: 6.5px;
         --cases_rainbow: 18px;
-        --cases_card_h2: 8px;
+        --cases_card_h2: 7px;
         --font__footer: 5px;
         --footer_p: 12px;
     }
 
     .navigation {
-        height: 77px;
+        height: 100px;
         &__navbar {
             height: 29px;
         }
@@ -2569,13 +2763,14 @@ html, body {
             align-items: center;
             padding: 0;
             &__child {
-                min-height: 120px;
-                min-width: calc((96vw - 48px) / 3);
+                min-height: 168px;
+                min-width: calc((96vw - 40px) / 2);
                 border-radius: 6px;
                 &__h2{
+                    font-size: 15px;
                 }
                 &__p {
-                    font-size: 4.5px;
+                    font-size: 8px;
                 }
             }
             &__arrow_left, &__arrow_right {
@@ -2588,6 +2783,9 @@ html, body {
         &__grid {
             margin-top: 0;
         }
+    }
+    .clever {
+        height: 60%;
     }
 
     .wedo {
@@ -2631,7 +2829,7 @@ html, body {
                 line-height: 20px;
             }
             &__p {
-                line-height: 20px;
+                line-height: 18px;
             }
         }
         &__cards {
@@ -2688,7 +2886,7 @@ html, body {
     }
 
     .cases {
-        height: 105vw;
+        height: 92vw;
         &__cont {
             gap: 10px;
             &__h1 {
@@ -2699,9 +2897,17 @@ html, body {
                 &__card {
                     height: 240px;
                     padding: 10px 7px;
+                    &__p {
+                        font-size: 6px;
+                    }
                     &__hidden {
                         &__text {
+                            font-size: 6px;
                             line-height: 9px;
+                            li {
+                                padding-left: 0px;
+                                margin-left: 10px;
+                            }
                         }
                     }
                 }
@@ -2722,15 +2928,24 @@ html, body {
                 }
             }
             &__footer {
-                height: 85px;
                 margin-bottom: 0px;
+                height: 100px;
+                &__left {
+                    height: 70%;
+                    img {
+                        width: 70%;
+                    }
+                }
                 &__right {
-                    height: 28px;
+                    height: 10px;
+                    width: 17%;
+                    p {
+                        margin-bottom: 0;
+                    }
                     &__social {
-                        justify-content: space-between;
                         &__link {
                             img {
-                                height: 40%;
+                                height: 30%;
                             }
                         }
                     }
@@ -2738,4 +2953,364 @@ html, body {
             }
         }
     }
+
+    .cta {
+        &__top {
+            height: max-content;
+            padding-left: 22px;
+            &__img {
+                height: 60%;
+                width: 60%;
+            }
+        }
+        &__middle {
+            margin-top: 0px;
+            &__left {
+                height: 175px;
+                padding-left: 22px;
+                &__img {
+                    top: 50px;
+                    width: 200px;
+                    height: 150px;
+                }
+                &__elipse {
+                    top: -50px;
+                    width: 550px;
+                    height: 400px;
+                }
+            }
+            &__right {
+                gap: 20px;
+                padding-left: 22px;
+                &__box {
+                    &__area {
+                        height: 38px;
+                        border-radius: 8px;
+                    }
+                    &__message {
+                        height: 100px;
+                        border-radius: 8px;
+                    }
+                }
+                &__submit {
+                    width: 76px;
+                    height: 22px;
+                }
+            }
+        }
+    }
+    .footer_cta {
+        height: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    :root {
+        --width: 90vw;
+    }
+    .welcome {
+        &__image {
+            right: 72%;
+        }
+        &__content {
+            &__button {
+                width: 84%;
+                padding: 5px 5px 5px 5px;
+            }
+        }
+    }
+
+    .our_serv {
+        &__karusel {
+            &__child {
+                min-height: 151px;
+                min-width: calc((96vw - 40px) / 2);
+                &__h2 {
+                    font-size: 14px;
+                }
+                &__p {
+                    font-size: 7px;
+                }
+            }
+        }
+    }
+    .points {
+        &__cards {
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+            &__card {
+                height: 100%;
+                width: 70%;
+                &__h3 {
+                    font-size: 13px;
+                }
+                &__p {
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+    .cases {
+
+        &__big {
+
+        }
+        &__cont {
+            &__h1 {
+                &_rainbow {
+                    font-size: 16px;
+                }
+            }
+            &__cards {
+                &__card {
+                    height: 200px;
+                    &__hidden {
+                        border-radius: 6px;
+                        top: -72.5%;
+                    }
+                }
+            }
+        }
+    }
+    .wedo {
+        &__big {
+            height: 86%;
+        }
+    }
+
+    .footer {
+        &__cont {
+            &__footer {
+                &__left {
+                    height: 55%;
+                }
+            }
+        }
+    }
+
+
+    .clever {
+        height: 50%;
+    }
+    .footer {
+        z-index: 1;
+    }
+
+    .cta {
+        &__top {
+            &__img {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 300px) {
+.navigation {
+    height: 60px;
+    gap: 5px;
+    width: 250px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    &__logo {
+        &__logo {
+            width: 30px;
+        }
+        &__elipse {
+            margin-top: 20px;
+        }
+    }
+    &__navbar {
+        width: 78%;
+        padding-top: 0px;
+        height: 20px;
+    }
+    &__button {
+        position: relative;
+        right: -164px;
+        top: -40px;
+    }
+}
+.welcome {
+    &__content {
+        &__button {
+            width: 120%;
+            &_start {
+                width: 73px;
+            }
+        }
+        &__h1 {
+            font-size: 25px;
+        }
+    }
+    &__image {
+        right: 100%;
+    }
+}
+
+.our_serv {
+    &__karusel {
+        padding-right: 10px;
+        &__child {
+            min-width: calc((96vw - 37px));
+            height: 180px;
+            padding: 16px;
+            &__h2 {
+                font-size: 18px;
+            }
+            &__p {
+                font-size: 10px;
+            }
+        }
+    }
+}
+.partners {
+    &__h1 {
+        width: 100%;
+    }
+    &__p {
+        width: 90%;
+    }
+    &__grid {
+        height: 177px;
+    }
+}
+.wedo {
+    margin-top: 0;
+    gap: 10px;
+    height: 450px;
+    &__big {
+        height: 87%;
+    }
+    &__title {
+        &__p {
+            width: 77%;
+        }
+    }
+    &__main {
+        height: 100vw;
+        &__buttons {
+            height: 92vw;
+            &__child {
+                gap: 10px;
+                &__btn {
+                    gap: 8px;
+                    font-size: 9px;
+                    z-index: 9;
+                    &__arrow {
+                        width: 7px;
+                    }
+                }
+            }
+        }
+        &__img {
+            top: 10%;
+        }
+    }
+}
+.points {
+    &__text {
+        &__h2 {
+            font-size: 14px;
+            width: 97vw;
+        }
+        &__p {
+            width: 97vw;
+            line-height: 16px;
+            font-size: 8px;
+        }
+    }
+}
+.process {
+    margin-bottom: 0;
+    &__cards {
+        top: 0px;
+        height: 300px;
+        &__card {
+            &__h2 {
+                font-size: 9px;
+            }
+        }
+    }
+    .card1 {
+        padding-top: 52px;
+    }
+    .card2 {
+        padding-top: 25px;
+        padding-left: 162px;
+        h2 {font-size: 8px;}
+    }
+    .card3 {
+        padding-top: 22px;
+        padding-left: 48px;
+    }
+    .card4 {
+        padding-left: 154px;
+        padding-top: 9px;
+    }
+}
+.cases {
+    height: max-content;
+    &__big {
+        top: 30px;
+        height: 98%;
+    }
+    &__cont {
+        &__cards {
+            gap: 6px;
+            flex-wrap: wrap;
+            width: 251px;
+            &__card {
+                width: 120px;
+                gap: 7px;
+                &__h2 {
+                    font-size: 8.5px;
+                }
+                &__p {
+                    font-size: 7px;
+                }
+                &__img {
+                    height: 65%;
+                }
+                &__hidden {
+                    width: 120px;
+                    &__text {
+                        font-size: 7px;
+                        line-height: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer {
+    margin-top: 82px;
+    &__cont {
+        &__footer {
+            &__right {
+                width: 19%;
+                &__social {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.cta {
+    &__middle {
+        &__left {
+            gap: 14px;
+            height: 140px;
+            padding-top: 30px;
+        }
+        &__right {
+            width: 95%;
+        }
+    }
+}
+.footer_cta {
+    margin-top: 0px;
+}
 }
