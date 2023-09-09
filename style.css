@@ -373,6 +373,7 @@ html, body {
   align-items: center;
   justify-items: center;
 }
+
 /*–––wedo––––*/
 .wedo {
   width: 100vw;
@@ -2346,7 +2347,7 @@ html, body {
     margin-top: 0;
   }
   .clever {
-    height: 60%;
+    height: 50%;
   }
   .wedo {
     margin-top: 24px;
@@ -2598,14 +2599,14 @@ html, body {
   .footer__cont__footer__left {
     height: 55%;
   }
-  .clever {
-    height: 50%;
-  }
   .footer {
     z-index: 1;
   }
   .cta__top__img {
     width: 50%;
+  }
+  .clever {
+    height: 40%;
   }
 }
 @media (max-width: 300px) {
@@ -2787,5 +2788,8 @@ html, body {
   }
   .footer_cta {
     margin-top: 0px;
+  }
+  .clever {
+    height: 50%;
   }
 }/*# sourceMappingURL=style.css.map */

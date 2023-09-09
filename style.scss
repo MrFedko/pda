@@ -415,10 +415,6 @@ html, body {
         align-content: space-between;
         align-items: center;
         justify-items: center;
-
-        &__child__img {
-
-        }
     }
 }
 
@@ -2785,7 +2781,7 @@ html, body {
         }
     }
     .clever {
-        height: 60%;
+        height: 50%;
     }
 
     .wedo {
@@ -3090,10 +3086,6 @@ html, body {
         }
     }
 
-
-    .clever {
-        height: 50%;
-    }
     .footer {
         z-index: 1;
     }
@@ -3104,6 +3096,9 @@ html, body {
                 width: 50%;
             }
         }
+    }
+    .clever {
+        height: 40%;
     }
 }
 
@@ -3312,5 +3307,8 @@ html, body {
 }
 .footer_cta {
     margin-top: 0px;
+}
+.clever {
+    height: 50%;
 }
 }
