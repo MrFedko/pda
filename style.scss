@@ -13,7 +13,7 @@ html, body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     background: var(--pda-bg, #120D35);;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 // img {
