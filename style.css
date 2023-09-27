@@ -12,7 +12,6 @@ html, body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   background: var(--pda-bg, #120D35);
-  overflow-x: clip;
 }
 
 /* ––––––––––– */
@@ -24,6 +23,7 @@ html, body {
   flex-direction: row;
   margin-top: 30px;
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 .navigation__logo {
   display: flex;
@@ -96,12 +96,13 @@ html, body {
 
 /* ––––welcome–––– */
 .welcome {
-  width: 1136px;
   height: 530px;
   margin: 0 auto;
   margin-top: 60px;
-  display: -webkit-box;
+  display: flex;
   margin-bottom: 60px;
+  overflow-x: clip;
+  padding-left: calc((100vw - 1148px) / 2);
 }
 .welcome__content {
   width: 600px;
@@ -218,22 +219,22 @@ html, body {
 
 /* ––––our_serv–––– */
 .our_serv {
-  width: 1138px;
   height: 574px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  overflow-x: clip;
 }
 .our_serv__title {
   height: 104px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 65px;
   margin-bottom: 48px;
+  gap: 3%;
 }
 .our_serv__title__h1 {
-  width: 601px;
   height: 104px;
   margin-top: 8px;
   justify-content: center;
@@ -245,7 +246,6 @@ html, body {
   line-height: 125%; /* 50px */
 }
 .our_serv__title__h3 {
-  width: 479px;
   color: var(--pda-blue-text, #3C6AFF);
   font-family: "Manrope";
   font-size: 24px;
@@ -258,7 +258,6 @@ html, body {
   flex-direction: row;
   width: 1199px;
   margin: auto;
-  left: -30px;
   position: relative;
   gap: 10px;
 }
@@ -337,6 +336,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   margin-top: 60px;
+  overflow-x: clip;
 }
 .partners__h1 {
   width: 611px;
@@ -386,6 +386,7 @@ html, body {
   padding-top: 140px;
   gap: 74px;
   position: relative;
+  overflow-x: clip;
 }
 .wedo__big {
   position: absolute;
@@ -541,6 +542,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  overflow-x: clip;
 }
 .points__text {
   display: flex;
@@ -634,7 +636,8 @@ html, body {
   position: relative;
   display: flex;
   align-items: center;
-  width: 1440px;
+  overflow-x: clip;
+  padding-left: 2.5vw;
 }
 .process__font {
   position: absolute;
@@ -650,7 +653,7 @@ html, body {
 }
 .process__font__images__vector {
   position: relative;
-  padding-left: 244px;
+  padding-left: 5vw;
   padding-top: 145px;
   z-index: 5;
 }
@@ -734,6 +737,7 @@ html, body {
   justify-content: flex-start;
   margin-top: 160px;
   position: relative;
+  overflow-x: clip;
 }
 .cases__big {
   position: absolute;
@@ -859,6 +863,7 @@ html, body {
   margin-top: 60px;
   position: relative;
   z-index: 1;
+  overflow-x: clip;
 }
 .footer__cont {
   width: 1141px;
@@ -961,6 +966,10 @@ html, body {
 }
 
 /*–––cta––––*/
+.cta {
+  overflow-x: clip;
+}
+
 .cta__top {
   display: flex;
   width: 1142px;
@@ -1173,13 +1182,13 @@ html, body {
     width: var(--width);
   }
   .welcome {
-    width: var(--width);
+    padding-left: 5vw;
   }
   .welcome__image {
     right: calc(1200px - 99vw);
   }
-  .our_serv {
-    width: 93vw;
+  .our_serv__title {
+    gap: 6%;
   }
   .our_serv__title__h1 {
     font-size: var(--h1-35px);
@@ -1280,8 +1289,8 @@ html, body {
   .welcome__content__h3 {
     font-size: 21px;
   }
-  .our_serv__title__h1 {
-    font-size: 30px;
+  .our_serv__title {
+    gap: 2%;
   }
   .our_serv__title__h3 {
     font-size: 19px;
@@ -1365,10 +1374,11 @@ html, body {
   .our_serv__title {
     flex-direction: column;
     gap: 10px;
+    padding-left: 3.5vw;
   }
   .our_serv__title__h1 {
     padding-left: 2%;
-    font-size: var(--partners_h1);
+    font-size: 35px;
     margin-top: 0;
   }
   .our_serv__title__h3 {
@@ -1413,6 +1423,7 @@ html, body {
     padding-top: 80px;
     height: 125vw;
     background-size: 132vw;
+    padding-left: 3.5vw;
   }
   .wedo__title {
     flex-direction: column;
@@ -1978,9 +1989,6 @@ html, body {
   .partners__grid {
     height: 350px;
   }
-  .wedo {
-    width: var(--width);
-  }
   .wedo__main__buttons__child__btn {
     height: 60px;
   }
@@ -2259,6 +2267,11 @@ html, body {
     gap: 5px;
   }
 }
+@media (max-width: 550px) {
+  .cases__cont__cards__card__hidden {
+    top: -65%;
+  }
+}
 @media (max-width: 500px) {
   :root {
     --navbar__font: 7px;
@@ -2458,6 +2471,9 @@ html, body {
   .cases__cont__cards__card__p {
     font-size: 6px;
   }
+  .cases__cont__cards__card__hidden {
+    top: -73%;
+  }
   .cases__cont__cards__card__hidden__text {
     font-size: 6px;
     line-height: 9px;
@@ -2591,7 +2607,7 @@ html, body {
   }
   .cases__cont__cards__card__hidden {
     border-radius: 6px;
-    top: -72.5%;
+    top: -73.5%;
   }
   .wedo__big {
     height: 86%;
@@ -2710,6 +2726,9 @@ html, body {
   }
   .process {
     margin-bottom: 0;
+  }
+  .process__font__images__vector {
+    padding-left: 0;
   }
   .process__cards {
     top: 0px;
