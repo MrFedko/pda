@@ -1869,7 +1869,7 @@ html, body {
             left: -300px;
         }
     }
-
+    
     &__right {
         width: 512px;
         height: 796px;
@@ -1914,7 +1914,6 @@ html, body {
                     justify-content: space-between;
             gap: 23px;
             width: 100%;
-
             & label {
                 color: var(--pda-white, #FFF);
                 font-family: 'Manrope';
@@ -1944,7 +1943,7 @@ html, body {
             }
 
             &__message {
-                height: 297px;
+                height: 250px;
                 -ms-flex-item-align: stretch;
                     -ms-grid-row-align: stretch;
                     -webkit-align-self: stretch;
@@ -1968,8 +1967,8 @@ html, body {
                            -moz-box-align: start;
                         align-items: flex-start;
             }
-
         }
+        
         &__submit {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -2002,6 +2001,30 @@ html, body {
             font-weight: 600;
             line-height: normal;
             position: relative;
+        }
+        .agree{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            color: var(--PDA-White, #FFF);
+            justify-content: flex-start;
+
+
+            & a {
+                color: white;
+            }
+            & input[type="checkbox" i] {
+                width: 21px;
+                height: 21px;
+            }
+            & label {
+                font-family: Manrope;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%; /* 21px */
+                
+            }
         }
     }
 }
@@ -2422,6 +2445,13 @@ html, body {
 
     .footer__cont__top{
         height: 200px;
+    }
+    .cta__middle__right {
+        .agree{
+            & label {
+                font-size: 12px;
+            }
+        }
     }
 }
 
@@ -3702,6 +3732,13 @@ html, body {
                 &__box {
                     gap: 5px;
                 }
+                .agree{
+                    gap: 10px;
+                    & input[type="checkbox" i] {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
             }
         }
     }
@@ -4060,6 +4097,16 @@ html, body {
                 &__submit {
                     width: 76px;
                     height: 22px;
+                }
+                .agree{
+                    gap: 8px;
+                    & input[type="checkbox" i] {
+                        width: 13px;
+                        height: 13px;
+                    }
+                    & label {
+                        font-size: 8px;
+                    }
                 }
             }
         }

@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 100 version
+*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200;300;400;500;600;700;800&family=Unbounded:wght@300&display=swap");
 * {
@@ -673,6 +679,7 @@ html, body {
   display: flex;
   align-items: center;
   overflow-x: clip;
+  padding-left: -moz-calc((100vw - 95vw) / 2);
   padding-left: 2.5vw;
 }
 .process__font {
@@ -689,6 +696,7 @@ html, body {
 }
 .process__font__images__vector {
   position: relative;
+  padding-left: -moz-calc((100vw - 90vw) / 2);
   padding-left: 5vw;
   padding-top: 145px;
   z-index: 5;
@@ -1129,7 +1137,7 @@ html, body {
   padding-left: 15px;
 }
 .cta__middle__right__box__message {
-  height: 297px;
+  height: 250px;
   align-self: stretch;
   border-radius: 25px;
   background: var(--pda-form, rgba(18, 53, 177, 0.4));
@@ -1162,6 +1170,27 @@ html, body {
   font-weight: 600;
   line-height: normal;
   position: relative;
+}
+.cta__middle__right .agree {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  color: var(--PDA-White, #FFF);
+  justify-content: flex-start;
+}
+.cta__middle__right .agree a {
+  color: white;
+}
+.cta__middle__right .agree input[type=checkbox i] {
+  width: 21px;
+  height: 21px;
+}
+.cta__middle__right .agree label {
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 21px */
 }
 
 .cta__pp {
@@ -1260,6 +1289,7 @@ html, body {
   }
   .process__font__images__vector {
     padding-left: 8vw;
+    width: -moz-calc(100vw - 10vw);
     width: 90vw;
     min-height: 581px;
   }
@@ -1267,13 +1297,16 @@ html, body {
     width: 100vw;
   }
   .process__cards .card1 {
+    padding-left: -moz-calc(100vw - 85vw);
     padding-left: 15vw;
   }
   .process__cards .card2 {
+    padding-left: -moz-calc(100vw - 38vw);
     padding-left: 62vw;
   }
   .process__cards .card3 {
     padding-top: 130px;
+    padding-left: -moz-calc(100vw - 78vw);
     padding-left: 22vw;
   }
   .process__cards .card4 {
@@ -1298,6 +1331,7 @@ html, body {
     width: var(--width);
   }
   .welcome {
+    padding-left: -moz-calc((100vw - 90vw) / 2);
     padding-left: 5vw;
   }
   .welcome__image {
@@ -1473,6 +1507,9 @@ html, body {
   .footer__cont__top {
     height: 200px;
   }
+  .cta__middle__right .agree label {
+    font-size: 12px;
+  }
 }
 @media (max-width: 980px) {
   .navigation {
@@ -1494,6 +1531,7 @@ html, body {
   .our_serv__title {
     flex-direction: column;
     gap: 10px;
+    padding-left: -moz-calc((100vw - 93vw) / 2);
     padding-left: 3.5vw;
   }
   .our_serv__title__h1 {
@@ -1543,6 +1581,7 @@ html, body {
     padding-top: 80px;
     height: 125vw;
     background-size: 132vw;
+    padding-left: -moz-calc((100vw - 93vw) / 2);
     padding-left: 3.5vw;
   }
   .wedo__title {
@@ -2393,6 +2432,13 @@ html, body {
   .cta__middle__right__box {
     gap: 5px;
   }
+  .cta__middle__right .agree {
+    gap: 10px;
+  }
+  .cta__middle__right .agree input[type=checkbox i] {
+    width: 15px;
+    height: 15px;
+  }
 }
 @media (max-width: 550px) {
   .cases__cont__cards__card__hidden {
@@ -2684,6 +2730,16 @@ html, body {
   .cta__middle__right__submit {
     width: 76px;
     height: 22px;
+  }
+  .cta__middle__right .agree {
+    gap: 8px;
+  }
+  .cta__middle__right .agree input[type=checkbox i] {
+    width: 13px;
+    height: 13px;
+  }
+  .cta__middle__right .agree label {
+    font-size: 8px;
   }
   .footer_cta {
     height: 100%;
