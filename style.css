@@ -2279,11 +2279,7 @@ html, body {
     height: 38px;
   }
   .cta__pp__h1 {
-    width: 90vw;
-    font-size: 30px;
-  }
-  .cta__pp__ol, .cta__pp p, .cta__pp a, .cta__pp ul {
-    font-size: 18px;
+    width: 88vw;
   }
 }
 @media (max-width: 600px) {
@@ -2781,12 +2777,6 @@ html, body {
   .footer_cta {
     height: 100%;
     margin-top: 20px;
-  }
-  .cta__pp__h1 {
-    font-size: 24px;
-  }
-  .cta__pp__ol, .cta__pp p, .cta__pp a, .cta__pp ul {
-    font-size: 14px;
   }
 }
 @media (max-width: 400px) {

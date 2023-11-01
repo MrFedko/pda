@@ -3528,11 +3528,7 @@ html, body {
     }
     .cta__pp {
         &__h1 {
-        width: 90vw;
-        font-size: 30px;
-    }
-    &__ol, p, a, ul{
-        font-size: 18px;
+        width: 88vw;
     }
 }
 }
@@ -4156,14 +4152,6 @@ html, body {
         height: 100%;
         margin-top: 20px;
     }
-    .cta__pp {
-        &__h1 {
-        font-size: 24px;
-    }
-    &__ol, p, a, ul{
-        font-size: 14px;
-    }
-}
 }
 
 @media (max-width: 400px) {
