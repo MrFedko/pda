@@ -1741,7 +1741,6 @@ html, body {
     display: flex;
     width: 1142px;
     height: 216px;
-    padding: 0px 1017.365px 0px 0px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             -webkit-align-items: center;
@@ -1815,7 +1814,6 @@ html, body {
                 flex-direction: column;
         gap: 20px;
         padding-top: 121px;
-        padding-left: 15px;
 
         &__h1 {
             width: 539px;
@@ -2304,13 +2302,12 @@ html, body {
     }
 
     .cta__top {
-        padding: 0px 0px 0px 15px;
-        width: 90vw;
+        width: 93vw;
         
     }
 
     .cta__middle {
-        width: 90vw;
+        width: 93vw;
         &__left {
             &__h1 {
                 font-size: var(--h1-35px);
@@ -2322,8 +2319,7 @@ html, body {
     }
 
     .cta__pp {
-        width: 90vw;
-        padding-left: 15px;
+        width: 93vw;
     }
 }
 
@@ -2706,6 +2702,9 @@ html, body {
             }
         }
     }
+    .cta__top {
+        width: calc(100vw - 50px);
+    }
 }
 
 @media (max-width: 900px) {
@@ -2798,6 +2797,7 @@ html, body {
         &__p {
             font-size: var(--partners_p);
             width: 64%;
+            margin-top: 10px;
         }
         &__grid {
             &__child {
@@ -2843,6 +2843,7 @@ html, body {
 
     .points {
         &__text {
+            gap: 10px;
             &__h2 {
                 font-size: var(--wedo__h1);
                 width: 80vw;
@@ -2949,7 +2950,7 @@ html, body {
                     font-size: var(--partners_h1);
                 }
                 &__p {
-                    font-size: var(--cases_card_h2);
+                    font-size: var(--partners_p);
                 }
                 &__button {
                     font-size: var(--navbar__font);
@@ -3004,8 +3005,7 @@ html, body {
     }
     
     .cta__top {
-        padding-left: 32px;
-        height: 180px;
+        height: 216px;
         &__img {
             width: 102px;
         }
@@ -3018,16 +3018,17 @@ html, body {
                    -moz-box-orient: vertical;
                    -moz-box-direction: normal;
                 flex-direction: column;
-        width: 90vw;
+        width: calc(100vw - 50px);
         height: 100%;
         gap: 20px;
         &__left {
             padding-top: 40px;
-            padding-left: 32px;
             width: 100%;
+            gap: 10px;
         }
         &__right {
             width: 100%;
+            padding: 0;
         }
     }
 
@@ -3036,6 +3037,7 @@ html, body {
         padding-left: 2vw;
     }
     .cta__pp {
+        width: calc(100vw - 50px);
         &__h1{
             font-size: var(--wedo__h1);
         }
@@ -3080,8 +3082,6 @@ html, body {
             height: 100%;
             width: 15%;
             &__logo {
-                width: 100%;
-                height: 75%;
             }
             &__elipse {
                 width: 80px;
@@ -3278,7 +3278,6 @@ html, body {
         }
     }
     .cta__top__img {
-        width: 65%;
     }
 }
 
@@ -3306,6 +3305,9 @@ html, body {
 
     .navigation {
         height: 150px;
+        &__logo__logo {
+            height: 150px;
+        }
         &__navbar {
             -webkit-box-align: end;
                 -ms-flex-align: end;
@@ -3494,6 +3496,13 @@ html, body {
             }
         }
     }
+    .cta__top{
+        margin-top: 30px;
+        height: 150px;
+    &__img {
+    height: 150px;
+    }
+}
     .cta__middle {
         &__left {
             &__h1 {
@@ -3557,6 +3566,10 @@ html, body {
     }
 
     .navigation {
+        &__logo__logo {
+            height: 120px;
+            width: 73px;
+        }
         height: 120px;
         &__button {
             width: 110px;
@@ -3749,9 +3762,11 @@ html, body {
     }
     .cta {
         &__top {
+            align-content: flex-start;
+            flex-wrap: wrap;
             &__img {
-                height: 70%;
-                width: 55%;
+                height: 120px;
+                width: 73px;
             }
         }
         &__middle {
@@ -3813,6 +3828,10 @@ html, body {
 
     .navigation {
         height: 100px;
+        &__logo__logo {
+            height: 80px;
+            width: 50px;
+        }
         &__navbar {
             height: 29px;
         }
@@ -4083,20 +4102,19 @@ html, body {
 
     .cta {
         &__top {
+            height: 100px;
             height: -webkit-max-content;
             height: -moz-max-content;
             height: max-content;
-            padding-left: 22px;
             &__img {
-                height: 60%;
-                width: 40%;
+                height: 80px;
+                width: 50px;
             }
         }
         &__middle {
             margin-top: 0px;
             &__left {
                 height: 175px;
-                padding-left: 22px;
                 &__img {
                     top: 50px;
                     width: 200px;
@@ -4110,7 +4128,6 @@ html, body {
             }
             &__right {
                 gap: 20px;
-                padding-left: 22px;
                 &__box {
                     &__area {
                         height: 38px;
@@ -4250,14 +4267,6 @@ html, body {
     .footer {
         z-index: 1;
     }
-
-    .cta {
-        &__top {
-            &__img {
-                width: 40%;
-            }
-        }
-    }
     .clever {
         height: 40%;
     }
@@ -4279,6 +4288,7 @@ html, body {
     &__logo {
         &__logo {
             width: 30px;
+            height: 50px;
         }
         &__elipse {
             margin-top: 20px;
@@ -4474,6 +4484,12 @@ html, body {
     }
 }
 .cta {
+    &__top {
+        &__img {
+            width: 30px;
+            height: 50px;
+        }
+    }
     &__middle {
         &__left {
             gap: 14px;
