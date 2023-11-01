@@ -1684,6 +1684,9 @@ html, body {
                 & a {
                     color: white;
                 }
+                &__pol { 
+                    color: #1648FA!important;
+                }
             }
 
             &__right {
@@ -2053,14 +2056,14 @@ html, body {
         font-family: Manrope;
         font-size: 24px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 140%; /* 33.6px */
         a {
             color: #FFF;
             font-family: Manrope;
             font-size: 24px;
             font-style: normal;
-            font-weight: 400;
+            font-weight: 300;
             line-height: 140%;
             -webkit-text-decoration-line: underline;
                -moz-text-decoration-line: underline;
@@ -2071,7 +2074,7 @@ html, body {
             font-family: Manrope;
             font-size: 24px;
             font-style: normal;
-            font-weight: 400;
+            font-weight: 300;
             line-height: 140%;
             text-align: justify;
         }
@@ -2453,6 +2456,23 @@ html, body {
             }
         }
     }
+    .cta__pp {
+        &__h1{
+            font-size: 36px;
+        }
+        &__ol {
+            font-size: 21px;
+            a {
+                font-size: 21px;
+            }
+            p, ul {
+                font-size: 21px;
+            }
+            li {
+                margin-top: 20px;
+            }
+        }
+    }
 }
 
 @media (max-width: 980px) {
@@ -2600,6 +2620,7 @@ html, body {
             }
             &__p {
                 width: 90vw;
+                line-height: 140%;
             }
         }
     }
@@ -2926,7 +2947,7 @@ html, body {
                     font-size: var(--partners_h1);
                 }
                 &__p {
-                    font-size: var(--footer_p);
+                    font-size: var(--cases_card_h2);
                 }
                 &__button {
                     font-size: var(--navbar__font);
@@ -2983,6 +3004,9 @@ html, body {
     .cta__top {
         padding-left: 32px;
         height: 180px;
+        &__img {
+            width: 102px;
+        }
     }
     .cta__middle {
         -webkit-box-orient: vertical;
@@ -3008,6 +3032,23 @@ html, body {
     .footer_cta {
         height: 100%;
         padding-left: 2vw;
+    }
+    .cta__pp {
+        &__h1{
+            font-size: var(--wedo__h1);
+        }
+        &__ol {
+            font-size: var(--welcome__h3);
+            a {
+                font-size: var(--welcome__h3);
+            }
+            p, ul {
+                font-size: var(--welcome__h3);
+            }
+            li {
+                margin-top: var(--cases_card_h2);
+            }
+        }
     }
 }
 
@@ -3234,6 +3275,9 @@ html, body {
             }
         }
     }
+    .cta__top__img {
+        width: 65%;
+    }
 }
 
 @media (max-width: 700px) {
@@ -3381,9 +3425,6 @@ html, body {
                 height: -webkit-max-content;
                 height: -moz-max-content;
                 height: max-content;
-            }
-            &__p {
-                line-height: 27px;
             }
         }
         &__cards {
@@ -3717,7 +3758,7 @@ html, body {
         &__top {
             &__img {
                 height: 70%;
-                width: 70%;
+                width: 62%;
             }
         }
         &__middle {
@@ -3920,7 +3961,7 @@ html, body {
                 line-height: 20px;
             }
             &__p {
-                line-height: 18px;
+                line-height: 16px;
             }
         }
         &__cards {
@@ -4016,7 +4057,7 @@ html, body {
         &__cont {
             gap: 10px;
             &__top {
-                height: 105px;
+                height: 90px;
                 margin-bottom: 0;
                 &__button {
                     width: 76px;
@@ -4058,7 +4099,7 @@ html, body {
             padding-left: 22px;
             &__img {
                 height: 60%;
-                width: 60%;
+                width: 51%;
             }
         }
         &__middle {
@@ -4231,7 +4272,7 @@ html, body {
     .cta {
         &__top {
             &__img {
-                width: 50%;
+                width: 40%;
             }
         }
     }

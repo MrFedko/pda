@@ -989,6 +989,9 @@ html, body {
 .footer__cont__footer__middle a {
   color: white;
 }
+.footer__cont__footer__middle__pol {
+  color: #1648FA !important;
+}
 .footer__cont__footer__right {
   width: 194px;
   height: 116px;
@@ -1216,7 +1219,7 @@ html, body {
   font-family: Manrope;
   font-size: 24px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 140%; /* 33.6px */
 }
 .cta__pp__ol a {
@@ -1224,7 +1227,7 @@ html, body {
   font-family: Manrope;
   font-size: 24px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 140%;
   text-decoration-line: underline;
 }
@@ -1233,7 +1236,7 @@ html, body {
   font-family: Manrope;
   font-size: 24px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 140%;
   text-align: justify;
 }
@@ -1510,6 +1513,21 @@ html, body {
   .cta__middle__right .agree label {
     font-size: 12px;
   }
+  .cta__pp__h1 {
+    font-size: 36px;
+  }
+  .cta__pp__ol {
+    font-size: 21px;
+  }
+  .cta__pp__ol a {
+    font-size: 21px;
+  }
+  .cta__pp__ol p, .cta__pp__ol ul {
+    font-size: 21px;
+  }
+  .cta__pp__ol li {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 980px) {
   .navigation {
@@ -1611,6 +1629,7 @@ html, body {
   }
   .points__text__p {
     width: 90vw;
+    line-height: 140%;
   }
   .process__cards {
     justify-content: space-around;
@@ -1837,7 +1856,7 @@ html, body {
     font-size: var(--partners_h1);
   }
   .footer__cont__top__p {
-    font-size: var(--footer_p);
+    font-size: var(--cases_card_h2);
   }
   .footer__cont__top__button {
     font-size: var(--navbar__font);
@@ -1871,6 +1890,9 @@ html, body {
     padding-left: 32px;
     height: 180px;
   }
+  .cta__top__img {
+    width: 102px;
+  }
   .cta__middle {
     flex-direction: column;
     width: 90vw;
@@ -1888,6 +1910,21 @@ html, body {
   .footer_cta {
     height: 100%;
     padding-left: 2vw;
+  }
+  .cta__pp__h1 {
+    font-size: var(--wedo__h1);
+  }
+  .cta__pp__ol {
+    font-size: var(--welcome__h3);
+  }
+  .cta__pp__ol a {
+    font-size: var(--welcome__h3);
+  }
+  .cta__pp__ol p, .cta__pp__ol ul {
+    font-size: var(--welcome__h3);
+  }
+  .cta__pp__ol li {
+    margin-top: var(--cases_card_h2);
   }
 }
 @media (max-width: 800px) {
@@ -2055,6 +2092,9 @@ html, body {
   .footer__cont__footer__right p {
     margin-bottom: 10px;
   }
+  .cta__top__img {
+    width: 65%;
+  }
 }
 @media (max-width: 700px) {
   :root {
@@ -2172,9 +2212,6 @@ html, body {
     line-height: 30px;
     height: -moz-max-content;
     height: max-content;
-  }
-  .points__text__p {
-    line-height: 27px;
   }
   .points__cards__card__rectangle {
     width: 55px;
@@ -2416,7 +2453,7 @@ html, body {
   }
   .cta__top__img {
     height: 70%;
-    width: 70%;
+    width: 62%;
   }
   .cta__middle {
     gap: 0px;
@@ -2575,7 +2612,7 @@ html, body {
     line-height: 20px;
   }
   .points__text__p {
-    line-height: 18px;
+    line-height: 16px;
   }
   .points__cards {
     padding-top: 0;
@@ -2662,7 +2699,7 @@ html, body {
     gap: 10px;
   }
   .footer__cont__top {
-    height: 105px;
+    height: 90px;
     margin-bottom: 0;
   }
   .footer__cont__top__button {
@@ -2696,7 +2733,7 @@ html, body {
   }
   .cta__top__img {
     height: 60%;
-    width: 60%;
+    width: 51%;
   }
   .cta__middle {
     margin-top: 0px;
@@ -2808,7 +2845,7 @@ html, body {
     z-index: 1;
   }
   .cta__top__img {
-    width: 50%;
+    width: 40%;
   }
   .clever {
     height: 40%;
