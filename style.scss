@@ -2088,6 +2088,8 @@ html, body {
 .cta_pp_elipses {
     position: absolute;
     z-index: 1;
+    overflow-x: clip;
+    width: 100%;
     &_1 {
         position: relative;
         -webkit-border-radius: 309px;
@@ -3038,12 +3040,12 @@ html, body {
             font-size: var(--wedo__h1);
         }
         &__ol {
-            font-size: var(--welcome__h3);
+            font-size: var(--points__cards_p);
             a {
-                font-size: var(--welcome__h3);
+                font-size: var(--points__cards_p);
             }
             p, ul {
-                font-size: var(--welcome__h3);
+                font-size: var(--points__cards_p);
             }
             li {
                 margin-top: var(--cases_card_h2);
@@ -3668,11 +3670,6 @@ html, body {
 
     .points {
         gap: 0;
-        &__text {
-            &__p {
-                line-height: 20px;
-            }
-        }
         &__cards {
             &__card {
                 &__rectangle {
@@ -3754,7 +3751,7 @@ html, body {
         &__top {
             &__img {
                 height: 70%;
-                width: 62%;
+                width: 55%;
             }
         }
         &__middle {
@@ -3956,9 +3953,6 @@ html, body {
             &__h2 {
                 line-height: 20px;
             }
-            &__p {
-                line-height: 16px;
-            }
         }
         &__cards {
             padding-top: 0;
@@ -4095,7 +4089,7 @@ html, body {
             padding-left: 22px;
             &__img {
                 height: 60%;
-                width: 51%;
+                width: 40%;
             }
         }
         &__middle {
